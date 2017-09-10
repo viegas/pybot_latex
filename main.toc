@@ -1,0 +1,76 @@
+\changetocdepth {4}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{14}{chapter.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {DISPOSI\IeC {\c C}\IeC {\~O}ES GERAIS}}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}SE\IeC {\c C}\IeC {\~O}ES E SUBSE\IeC {\c C}\IeC {\~O}ES}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}ESPA\IeC {\c C}AMENTO}{15}{section.2.2}
+\contentsline {section}{\numberline {2.3}ALINHAMENTO}{15}{section.2.3}
+\contentsline {section}{\numberline {2.4}MARGENS}{16}{section.2.4}
+\contentsline {section}{\numberline {2.5}NUMERA\IeC {\c C}\IeC {\~A}O}{16}{section.2.5}
+\contentsline {section}{\numberline {2.6}ABREVIATURAS}{16}{section.2.6}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {ESTRUTURA}}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}ELEMENTOS PR\IeC {\'E}-TEXTUAIS}{18}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Capa}{18}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Lombada}{18}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Folha de Rosto}{18}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Errata}{18}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Folha de aprova\IeC {\c c}\IeC {\~a}o}{18}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Dedicat\IeC {\'o}ria}{18}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.7}Agradecimentos}{19}{subsection.3.1.7}
+\contentsline {subsection}{\numberline {3.1.8}Ep\IeC {\'\i }grafe}{19}{subsection.3.1.8}
+\contentsline {subsection}{\numberline {3.1.9}Resumo}{19}{subsection.3.1.9}
+\contentsline {subsection}{\numberline {3.1.10}Abstract}{19}{subsection.3.1.10}
+\contentsline {subsection}{\numberline {3.1.11}Lista de ilustra\IeC {\c c}\IeC {\~o}es}{19}{subsection.3.1.11}
+\contentsline {subsection}{\numberline {3.1.12}Lista de abreviatura e siglas}{19}{subsection.3.1.12}
+\contentsline {subsection}{\numberline {3.1.13}Lista de s\IeC {\'\i }mbolos}{20}{subsection.3.1.13}
+\contentsline {subsection}{\numberline {3.1.14}Sum\IeC {\'a}rio}{20}{subsection.3.1.14}
+\contentsline {section}{\numberline {3.2}ELEMENTOS TEXTUAIS}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Introdu\IeC {\c c}\IeC {\~a}o}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Desenvolvimento}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Conclus\IeC {\~a}o}{20}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}ELEMENTOS P\IeC {\'O}S-TEXTUAIS}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Referencias}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Ap\IeC {\^e}ndice}{21}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Anexo}{21}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}\IeC {\'I}ndice}{21}{subsection.3.3.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {ILUSTRA\IeC {\c C}\IeC {\~O}ES}}{22}{chapter.4}
+\contentsline {section}{\numberline {4.1}FIGURAS}{22}{section.4.1}
+\contentsline {section}{\numberline {4.2}QUADROS}{22}{section.4.2}
+\contentsline {section}{\numberline {4.3}TABELAS}{23}{section.4.3}
+\contentsline {section}{\numberline {4.4}GR\IeC {\'A}FICOS}{23}{section.4.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CITA\IeC {\c C}\IeC {\~O}ES}}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}CITA\IeC {\c C}\IeC {\~A}O DIRETA}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}CITA\IeC {\c C}\IeC {\~A}O INDIRETA}{25}{section.5.2}
+\contentsline {section}{\numberline {5.3}CITA\IeC {\c C}\IeC {\~A}O DE CITA\IeC {\c C}\IeC {\~A}O}{25}{section.5.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {T\IeC {\'E}CNICAS DE REFER\IeC {\^E}NCIAS}}{26}{chapter.6}
+\contentsline {section}{\numberline {6.1}MONOGRAFIA}{26}{section.6.1}
+\contentsline {section}{\numberline {6.2}LIVROS TENDO A ENTIDADE COMO AUTOR}{26}{section.6.2}
+\contentsline {section}{\numberline {6.3}DOCUMENTOS ELABORADOS POR V\IeC {\'A}RIOS AUTORES}{26}{section.6.3}
+\contentsline {section}{\numberline {6.4}DOCUMENTOS SEM AUTOR}{26}{section.6.4}
+\contentsline {section}{\numberline {6.5}ARTIGO OU MATERIA DE REVISTA}{26}{section.6.5}
+\contentsline {section}{\numberline {6.6}DOCUMENTO DE EVENTO}{26}{section.6.6}
+\contentsline {section}{\numberline {6.7}EXEMPLOS PARA CITA\IeC {\c C}\IeC {\~O}ES}{27}{section.6.7}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\uppercase {REFER\^ENCIAS}}{28}{section*.9}
+\vspace {\cftbeforechapterskip }
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Como elaborar}}{29}{appendix.A}
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Como elaborar}}{30}{appendix.anexochapback.1}

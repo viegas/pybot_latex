@@ -1,0 +1,88 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Arranjo tribut\'ario 1998]{7.4.2.3-6}
+\abntrefinfo{Arranjo\ldots}{ARRANJO\ldots}{1998}
+{ARRANJO tribut\'ario.
+\textbf{Di\'ario do Nordeste Online}, Fortaleza, 27 nov. 1998.
+Dispon{\'\i}vel em: \url{http://www.diariodonordeste.com.br}. Acesso em: 28
+  nov. 1998.}
+
+\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 1988]{NBR10520:1988}
+\abntrefinfo{ABNT}{ABNT}{1988}
+{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \textbf{{NBR} 10520}:
+  Apresenta{\c c}\~ao de cita{\c c}\~oes em documentos: Procedimentos.
+Rio de Janeiro, 1988.}
+
+\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2000]{NBR6023:2000}
+\abntrefinfo{ABNT}{ABNT}{2000}
+{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \textbf{{NBR} 6023}:
+  Informa{\c c}\~ao e documenta{\c c}\~ao: Refer\^encias: Elabora{\c c}\~ao.
+Rio de Janeiro, 2000.}
+
+\bibitem[Brasil 1995]{7.7.1.2-2}
+\abntrefinfo{Brasil}{BRASIL}{1995}
+{BRASIL. Constitui{\c c}\~ao (1988). {E}menda constitucional n{$^o$}9, de 9 de
+  novembro de 1995. {D}\'a nova reda{\c c}\~ao ao art.\ 177 da {C}onstitui{\c
+  c}\~ao {F}ederal, alterando e inserindo par\'agrafos.
+\textbf{Lex} --- Colet\^anea de Legisla{\c c}\~ao e Jurisprud\^encia:
+  legisla{\c c}\~ao federal e margin\'alia, S\~ao Paulo, v.~59, p.~1966,
+  out./dez. 1995.}
+
+\bibitem[Brasil. {Congresso. Senado} 1991]{7.7.1.2-5}
+\abntrefinfo{Brasil. {Congresso. Senado}}{BRASIL. {Congresso. Senado}}{1991}
+{BRASIL. {Congresso. Senado}. Resolu{\c c}\~ao n{$^o$} 17, de 1991. {A}utoriza
+  o desbloqueio de {L}etras {F}inanceiras do {T}esouro do {E}stado do {R}io
+  {G}rande do {S}ul, atrav\'es de revoga{\c c}\~ao do par\'agrafo 2{$^o$}, do
+  artigo 1{$^o$} da {R}esolu{\c c}\~ao n{$^o$} 72, de 1990.
+\textbf{Cole{\c c}\~ao de leis da Rep\'ublica Federativa do Brasil},
+  Bras{\'\i}lia, DF, v.~183, p. 1156--1157, maio/jun. 1991.}
+
+\bibitem[Diagn\'ostico do setor editorial brasileiro 1993]{8.1.1.5}
+\abntrefinfo{Diagn\'ostico\ldots}{DIAGN\'OSTICO\ldots}{1993}
+{DIAGN\'OSTICO do setor editorial brasileiro. S\~ao Paulo: C\^amara Brasileira
+  do Livro, 1993. 64~p.}
+
+\bibitem[Gomes 1998]{7.1.3-1}
+\abntrefinfo{Gomes}{GOMES}{1998}
+{GOMES, L. G. F.~F. \textbf{Novela e sociedade no Brasil}. Niter\'oi: EdUFF,
+  1998.}
+
+\bibitem[Gurgel 1997]{7.4.2.1-2}
+\abntrefinfo{Gurgel}{GURGEL}{1997}
+{GURGEL, C. Reforma do estado e seguran{\c c}a p\'ublica.
+\textbf{Pol{\'\i}tica e administra{\c c}\~ao}, Rio de Janeiro, v.~3, n.~2, p.
+  15--21, set. 1997.}
+
+\bibitem[Kelly 1996]{7.4.2.3-5}
+\abntrefinfo{Kelly}{KELLY}{1996}
+{KELLY, R. Electronic publishing at {APS}: its not just online journalism.
+\textbf{APS News Online}, Los Angeles, nov. 1996.
+Dispon{\'\i}vel em: \url{http://www.aps.org/apsnews/1196/11965.html}. Acesso
+  em: 25 nov. 1998.}
+
+\bibitem[Mansilla 1998]{7.4.2.1-4}
+\abntrefinfo{Mansilla}{MANSILLA}{1998}
+{MANSILLA, H. C.~F. La controversia entre universalismo y particularismo en la
+  filosofia de la cultura.
+\textbf{Revista Latinoamericana de Filosofia}, Buenos Aires, v.~24, n.~2,
+  primavera 1998.}
+
+\bibitem[Pol{\'\i}tica 1998]{7.3.2-2}
+\abntrefinfo{Pol{\'\i}tica}{POL{\'I}TICA}{1998}
+{POL{\'I}TICA.
+In:  DICION\'ARIO da l{\'\i}ngua portuguesa. Lisboa: Priberam Inform\'atica,
+  1998.
+Dispon{\'\i}vel em: \url{http://www.priberam.pt/dlDLPO}. Acesso em: 8 mar.
+  1999.}
+
+\bibitem[Tourinho Neto 1997]{7.4.2.1-3}
+\abntrefinfo{Tourinho Neto}{TOURINHO NETO}{1997}
+{TOURINHO NETO, F.~C. Dano ambiental.
+\textbf{Consulex}, Bras{\'\i}lia, DF, ano~1, n.~1, p. 18--23, fev. 1997.}
+
+\end{thebibliography}
