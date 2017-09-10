@@ -155,8 +155,6 @@ INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/folhaCatalografica.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/dedicatoria.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/dedicatoria.aux
-INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/agradecimentos.aux
-INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/agradecimentos.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/epigrafe.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/epigrafe.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/resumoPt.aux
@@ -281,9 +279,6 @@ INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01
 OUTPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/dedicatoria.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/dedicatoria.tex
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/dedicatoria.tex
-OUTPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/agradecimentos.aux
-INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/agradecimentos.tex
-INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/agradecimentos.tex
 OUTPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/epigrafe.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/epigrafe.tex
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/epigrafe.tex
@@ -385,8 +380,6 @@ INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/folhaCatalografica.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/dedicatoria.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/dedicatoria.aux
-INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/agradecimentos.aux
-INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/agradecimentos.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/epigrafe.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/epigrafe.aux
 INPUT /home/latam/Dropbox/Aplicativos/ShareLaTeX/TCC - Felipe Viegas - IFRS/./01-elementos-pre-textuais/resumoPt.aux
