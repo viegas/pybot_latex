@@ -75,9 +75,9 @@
 
 % Elementos textuais
 \renewcommand{\textual}{%
-	
+
     %\pagenumbering{arabic} % Inicia a numeração em 1
-	\setcounter{page}{14} 			%>>>INDICAR PAGINA DE INTRODUÇÂO
+	\setcounter{page}{12} 			%>>>INDICAR PAGINA DE INTRODUÇÂO
     \ifthenelse{\equal{\ABNTEXisarticle}{true}}{%
         \pagestyle{plain}
     }
@@ -292,7 +292,7 @@
 %}
 
 \newcommand{\sumario}
-{	
+{
 		\setlength\cftpartnumwidth{\cftparagraphnumwidth}
 		\setlength\cftchapternumwidth{\cftparagraphnumwidth}
 		\setlength\cftsectionnumwidth{\cftparagraphnumwidth}
@@ -346,8 +346,8 @@
             \begin{OnehalfSpacing}
                 \setlength\parindent{0pt}
                 \setlength\parskip{12pt}
-}	
-{%       
+}
+{%
 		\end{OnehalfSpacing}
         \end{minipage}
     \end{flushright}

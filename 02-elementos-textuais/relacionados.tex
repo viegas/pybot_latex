@@ -1,0 +1,68 @@
+%
+% Documento: Introdução
+%
+
+\chapter{TRABALHOS RELACIONADOS}\label{chap:relacionados}
+
+    Conforme \cite{dos2016estudo} a importancia da criação de processos automatizados cresce junto da importancia que os \emph{softwares} vão tendo na sociedade, e as empresas
+    tem uma certa dificuldade quando tentam de adotar ou implantar tais tipos de processos, devido a falta de profissonais com esse conhecimento ou pelas tecnicas presentes hoje.
+
+    A solução para automação de testes e processos em \textit{browser} com maior adoção pela comunidade de desenvolvimento de software é o \emph{Selenium} \cite{selenium}.
+    O \emph{Selenium} trata-se de uma ferramenta composto por diversos projetos tais como \emph{Selenium Grid}, \emph{Selenium IDE}, \emph{Selenium Remote Control} e o \emph{Selenium WebDriver},
+    cada um com suas determinadas funcionalidades. Dentre os projetos citados, o \emph{Selenium WebDriver} é o que mais se assemelha ao projeto proposto pois trata-se de um framework para
+    integração com browser, este por sua vez é utilizado como uma das dependências do Pybot(\ref{webdriver}).
+
+    Ainda, outra ferramenta também relacionada ao projeto proposto é o Robotframework, esta por sua vez é uma solução bem mais sofisticada, contendo uma quantidade abrangente de módulos
+    e usos, porém junto traz uma complexidade maior para seu uso.
+
+    Similar a estes sistemas, a solução proposta neste Trabalho de Conclusão de Curso busca seguir direcionando a integração do \emph{Selenium} com o \emph{Python}. Porém, pretende-se com o Pybot o
+    desenvolvimento ferramenta simples e de fácil uso, portanto.
+
+    Para entender melhor o problema, apresenta-se uma análise das funcionalidades e usos das ferramentas citadas anteriormente junto de um comparativo de alguns pontos fortes e
+    fracos de cada uma delas.
+
+    \section{Selenium Webdriver}
+
+        \emph{Selenium Webdriver} \cite{webdriver} trata-se de um framework onde disponibiliza-se para usuário uma API para integração com o browser. Com essa API é possível enviar
+        diversos tipos de comandos para o navegador, tais como, verificação e iteração qualquer tipo de elemento presente no DOM (Modelo de Documento Objeto, do inglês Document Object Model),
+        geração de \emph{prints} de tela e manipulação do próprio navegador.
+
+        Ainda, possui suporte as seguintes linguagens de programação: \emph{Java}, \emph{Csharp}, \emph{Python}, \emph{Ruby}, \emph{Php}, \emph{Perl} e \emph{Javascript}. Na maioria
+        dos casos, o suporte e funcionalidade são os mesmos para todas linguagens, porém o maior suporte é dado para a linguagem \emph{Java}.
+
+
+    \section{Robotframework}
+
+        {Robotframework \cite{robotframework} é um dos \emph{frameworks} mais abrangentes disponíveis para teste de software para linguagem \emph{Python}. Esta solução consiste
+        de uma vasta variedade de módulos distintos, possíveis de serem habilitados. Desta forma, possível de optar por incluir determinado módulo ou não no projeto, tendo, também,
+        suporte a \emph{Java} na maioria de seus módulos.
+
+        Sua arquitetura foi feita para executar testes utilizando-se de ATDD (Acceptance Test Driven Development ou Desenvolvimento Orientado a Testes de Aceitação) que trata-se de uma
+        abordagem ou prática para a criação de requisitos colaborativamente entre o cliente e a equipe e fazendo uso da técnica de desenvolvimento Ágil BDD
+        (Behavior Driven Development ou Desenvolvimento Guiado por Comportamento em portugues) onde são criados cenários para cada tipo de comportamento da aplicação é criado levando em
+        conta 3 estados, Dado que, Quando e Então, como no exemplo a seguir.
+
+        Exemplo: Listas com alguma coisa dentro não podem estar vazias
+        \begin{itemize}
+            \item Dado que uma nova lista é criada, quando eu adiciono um objeto a ela, então a lista não deve estar vazia.
+        \end{itemize}
+
+        O Robotframework conta também com os seguinte recursos:
+
+        \begin{itemize}
+            \item geração de relatórios de execução, tanto de sucesso como em falhas;
+            \item interface por linha de comando;
+            \item resposta de execução por XML.
+        \end{itemize}
+
+
+    \section{Comparativo}
+
+    Ambos \emph{frameworks} utilizam em sua base o próprio \emph{Selenium Webdriver}, portando todas as funcionalidades de integração com os navegadores estarão presentes neles e não serão tratadas no
+    comparativo feito a seguir na tabela abaixo \ref{tab:comp}
+
+    \input{./05-tabelas/comparativo}
+
+    Como podemos ver, o diferencial é nas funcionalidades especificas de cada um, onde podemos perceber uma separação de níveis. Onde temos uma ferramenta super completa com módulos independentes
+    e específicos para cada necessidade, que é o caso do Robotframework, e por outro lado temos outros 2 \emph{frameworks} básicos, onde o Pybot traz algumas melhoria em relação ao selenium padrão, dando
+    mais facilidade para o inicio das tarefas e utilizando algumas técnicas para agilizar e organizar o desenvolvimento dos \emph{scripts}.
