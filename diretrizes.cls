@@ -1,6 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{diretrizes}[2015/02/02]
-
 % Repassa os parâmetros ao abntex2
 \DeclareOption*{%
     \PassOptionsToClass{\CurrentOption}{abntex2}
