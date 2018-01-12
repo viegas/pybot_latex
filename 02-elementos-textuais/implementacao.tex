@@ -2,11 +2,11 @@
 % Documento: FRAMEWORK PROPOSTO
 %
 \chapter{ARQUITETURA DO PYBOT}\label{chap:imp}
-    O \emph{framework} consiste em alguns módulos básicos, cada um com suas devidas utilidades e funções.
-    A separação dos de cada módulos foi dada com base em suas características e funcionalidades.
+    O \textit{framework} proposto é formado por 4 módulos básicos, cada um com suas devidas utilidades e funções.
+    A separação de cada módulos foi dada com base em suas características e funcionalidades.
 
-    Na Figura \ref{fig:modules}, apresenta-se a solução modular composta pelos módulos e as classes principais do
-    \emph{framework} e nas próximas seções serão detalhados cada um deles.
+    Na Figura \ref{fig:modules} é apresentado um diagrama dos módulos junto das suas classes principais que compõe o
+    \textit{framework} e nas próximas seções serão descritas as suas funcionalidades e usos.
 
 
     \begin{figure}[H]
@@ -15,20 +15,19 @@
         \caption{Diagrama de Componentes}
         \includegraphics[width=1\textwidth]{./04-figuras/model}
         \label{fig:modules}
-    \end{figure}~\vspace*{-0,9cm}~{\raggedright \fonte{Autor desta monografia, 2017.}}
-
+    \end{figure}
 
     \section{Core}
-        Este módulo contém as funcionalidades básicas para a operação do \emph{framework} com o Selenium \emph{Webdriver}
-        e o gerenciamento dos parâmetros de execuções de cada \emph{script}.
+        Este módulo contém as funcionalidades básicas para a operação do \textit{framework} com o Selenium \textit{Webdriver}
+        e o gerenciamento dos parâmetros de execuções de cada \textit{script}.
 
         \subsection{Manager} \label{sec:manager}
-        A classe \emph{Manager} serve para abstrair o uso do Selenium \emph{Webdriver} criando uma camada de métodos próprios fazendo com que caso alguma
-        atualização da API do Selenium \emph{Webdriver} altere os \emph{scripts} criados não sejam impactados. Fazendo uso do Driloader mencionado na
-        subseção \ref{driloader} ele verifica a necessidade do download do \emph{driver} para poder executar o \emph{Selenium Webdriver}.
+        A classe \textit{Manager} serve para abstrair o uso do Selenium \textit{Webdriver} criando uma camada de métodos próprios fazendo com que os \textit{scripts}
+        criados não sejam impactados por possíveis atualização na API do \textit{Selenium}. Fazendo uso do Driloader mencionado na
+        subseção \ref{driloader} ele verifica a necessidade do download do \textit{driver} para poder executar o \textit{Selenium Webdriver}.
 
-        Como exemplo na Figura~\ref{fig:manager} temos o exemplo de alguns dos comando disponíveis do Manager, sendo o da linha 4 para o inicio do processo
-        e execução do \emph{driver} do navegador, na linha 7 para navegar para uma URL e na linha 12 para finalizar o processo.
+        Como exemplo na Figura~\ref{fig:manager} temos o exemplo de alguns dos comando disponíveis do Manager, sendo o da linha 4 para o início do processo
+        e execução do \textit{driver} do navegador, na linha 7 para navegar para uma URL e na linha 12 para finalizar o processo.
 
         \begin{figure}[H]
             \vspace*{0,3cm}
@@ -37,13 +36,12 @@
             \includegraphics[width=0.8\textwidth]{./04-figuras/manager}
             \label{fig:manager}
         \end{figure}
-        \vspace*{-0,9cm}
-        {\raggedright \fonte{Autor desta monografia, 2017.}}
+
 
         \subsection{Configuration}
-        Responsável por gerar as configurações básicas para o \emph{framework} e disponibilizá-las no arquivo \emph{pybot.ini}.
+        Responsável por gerar as configurações básicas para o \textit{framework} e disponibilizá-las no arquivo \textit{pybot.ini}.
         Este arquivo é criado automaticamente para cada script do usuário e nele é possível adicionar qualquer tipo de configurações ou parâmetros
-        necessários para a execução do \emph{script}.
+        necessários para a execução do \textit{script}.
 
         Como exemplo, pode ser observado na linha 8 da código apresentado na Figura~\ref{fig:config} o comando base para buscar uma determinada configuração do arquivo.
 
@@ -54,11 +52,10 @@
             \includegraphics[width=0.8\textwidth]{./04-figuras/config}
             \label{fig:config}
         \end{figure}
-        \vspace*{-0,9cm}
-        {\raggedright \fonte{Autor desta monografia, 2017.}}
+
 
         O padrão de escrita das configurações pode ser visto na \autoref{fig:pybot.ini}, onde é necessário ter uma Seção e as variáveis desejadas.
-        E para a utilização delas segue o mesmo padrão: \\ \mbox{\emph{configuration.getConfig('Seção', 'variável')}}.
+        E para a utilização delas segue o mesmo padrão: \\ \mbox{\textit{configuration.getConfig('Seção', 'variável')}}.
 
         \begin{figure}[H]
             \vspace*{0,3cm}
@@ -67,16 +64,13 @@
             \includegraphics[width=0.7\textwidth]{./04-figuras/ini}
             \label{fig:pybot.ini}
         \end{figure}
-        \vspace*{-0,9cm}
-        {\raggedright \fonte{Autor desta monografia, 2017.}}
-
 
 
     \section{Component} \label{sec:comp}
-        Módulo criado para seguir os padrões de \emph{PageObject} e \emph{PageElement}, contendo as classes de PageObject e PageElement e a classe responsável
-        pela abstração para o \emph{WebElement} do \emph{Selenium Webdriver}.
+        Módulo criado para seguir os padrões de \textit{PageObject} e \textit{PageElement}, contendo as classes de PageObject e PageElement e a classe responsável
+        pela abstração para o \textit{WebElement} do \textit{Selenium Webdriver}.
 
-        Pode-se observar na Figura \ref{fig:eleme} o uso das classes \emph{PageObject}, \emph{PageElement} e \emph{PageElements} nas linhas 3, 4 e 5 respectivamente.
+        Pode-se observar na Figura \ref{fig:eleme} o uso das classes \textit{PageObject}, \textit{PageElement} e \textit{PageElements} nas linhas 3, 4 e 5 respectivamente.
 
         \begin{figure}[H]
             \vspace*{0,3cm}
@@ -85,23 +79,22 @@
             \includegraphics[width=1\textwidth]{./04-figuras/pageElement}
             \label{fig:eleme}
         \end{figure}
-        \vspace*{-0,9cm}
-        {\raggedright \fonte{Autor desta monografia, 2017.}}
+
 
         \subsection{WebElement}
-            Serve para abstrair o uso da classe \emph{WebElement} do próprio \emph{Selenium Webdriver}. Contendo uma classe para cada tipo de campo dos \emph{html},
-            ele dispõe de algumas funcionalidades básica, como a atribuição de uma valor para um elemento do tipo \emph{input text} irá escrever
-            valor dentro do campo, \emph{select} irá selecionar a opção cujo texto seja igual ao valor informado, \emph{radio} irá selecionar o
-            a opção que tenha o \emph{value} do valor informado e para o tipo \emph{checkbox} irá marcar ou desmarcar as opções se o valor for
-            verdadeiro(\emph{True}) ou falso(\emph{False})
+            Serve para abstrair o uso da classe \textit{WebElement} do próprio \textit{Selenium Webdriver}. Contendo uma classe para cada tipo de campo dos \textit{html},
+            ele dispõe de algumas funcionalidades básica, como a atribuição de uma valor para um elemento do tipo \textit{input text} irá escrever
+            valor dentro do campo, \textit{select} irá selecionar a opção cujo texto seja igual ao valor informado, \textit{radio} irá selecionar o
+            a opção que tenha o \textit{value} do valor informado e para o tipo \textit{checkbox} irá marcar ou desmarcar as opções se o valor for
+            verdadeiro(\textit{True}) ou falso(\textit{False})
 
         \subsection{PageElement e PageElements}
         \label{PageElement}
             Essas classes servem para controlar os elementos mapeados das telas. Sempre quando serão acessadas a classe faz novamente a pesquisa
-            do elemento em tela, prevenindo assim uma das exceções mais comum do Selenium Webdriver que é a \emph{StaleElementReferenceException},
+            do elemento em tela, prevenindo assim uma das exceções mais comum do Selenium Webdriver que é a \textit{StaleElementReferenceException},
             que é quando o elemento em questão não existe mais no DOM ou a referência que tinha não é mais a mesma. Conta com uma lista de seletores
             que facilitam para o usuário buscar os elementos e deixam o código mais legível, os mesmos podem ser observados na Figura~\ref{fig:selectors}
-            dentro de cada parênteses das definições dos \emph{PageElement}.
+            dentro de cada parênteses das definições dos \textit{PageElement}.
             Usa-se a classe PageElements quando quiser pegar mais de um elemento com o mesmo seletor.
 
 
@@ -112,8 +105,7 @@
                 \includegraphics[width=1\textwidth]{./04-figuras/selectors}
                 \label{fig:selectors}
             \end{figure}
-            \vspace*{-0,9cm}
-            {\raggedright \fonte{Autor desta monografia, 2017.}}
+
 
         \subsection{PageObject}
             Classe simbólica, serve apenas para poder juntar diversos PageElement descritos pelo usuário em uma classe para melhor
@@ -123,14 +115,14 @@
 
     \section{Report}
 
-        Estes módulo está destinado para geração de logs de execuções internas do \emph{framework}, criação e controle
+        Estes módulo é destinado para geração de logs de execuções internas do \textit{framework}, criação e controle
         de logs definidos pelos usuário e a criação de planilhas analíticas de dados extraídos das páginas.
 
         \subsection{Logger}
-        Classe de geração dos Logs de execução do \emph{framework}, onde cada execução, ação, sucessos e falhas podem ser configurados para que no decorrer do processo
+        Classe de geração dos Logs de execução do \textit{framework}, onde cada execução, ação, sucessos e falhas podem ser configurados para que no decorrer do processo
         sejam mostrados no terminal de execução e no final salvos em um arquivo de texto.
 
-        Na \autoref{fig:logs} podemos verificar 2 tipos de escritas do \emph{log}, onde na linha 11 temos a escrita de um \emph{log} e na linha 21 é o tratamento
+        Na \autoref{fig:logs} podemos verificar 2 tipos de escritas do \textit{log}, onde na linha 11 temos a escrita de um \textit{log} e na linha 21 é o tratamento
         de erros de execução, onde este para a execução do codigo ao ser chamado.
 
         \begin{figure}[H]
@@ -140,14 +132,13 @@
             \includegraphics[width=0.9\textwidth]{./04-figuras/logs}
             \label{fig:logs}
         \end{figure}
-        \vspace*{-0,9cm}
-        {\raggedright \fonte{Autor desta monografia, 2017.}}
+
 
         \subsection{CsvHandler}
         Utilizado para geração de planilhas com dados extraídos das páginas para análise posterior dos usuários. Os dados tem que ser extraídos manualmente pelo
-        usuário, e uma vez extraídos são salvos automaticamente em um arquivo com a extensão \emph{csv}.
+        usuário, e uma vez extraídos são salvos automaticamente em um arquivo com a extensão \textit{csv}.
 
-        Como exemplo, podemos observar na \autoref{fig:csv} um exemplo de utilização do \emph{CsvHandler}, onde, na linha 5 será criado uma planilha contendo uma
+        Como exemplo, podemos observar na \autoref{fig:csv} um exemplo de utilização do \textit{CsvHandler}, onde, na linha 5 será criado uma planilha contendo uma
         coluna Disciplina e na linha 21 será inserido registros na planilha abaixo da coluna.
 
         \begin{figure}[H]
@@ -157,16 +148,15 @@
             \includegraphics[width=0.9\textwidth]{./04-figuras/csv}
             \label{fig:csv}
         \end{figure}
-        \vspace*{-0,9cm}
-        {\raggedright \fonte{Autor desta monografia, 2017.}}
+
 
     \section{Driloader}
     \label{driloader}
-        Driloader é o responsável pelo download dos \textit{drivers} de cada navegador,suportando \textit{download} dos \textit{drivers} do Internet Explorer,
-        Firefox e Chrome, sendo possível para o usuário selecionar uma versão específica, a ultima versão ou detectar automaticamente qual a versão adequada para o navegador
-        instalado do usuário. Como para utilização do \emph{Selenium Webdriver} é necessário um \textit{driver} específico de cada navegador foi tomada a decisão da criação
-        desse projeto que inicialmente era um módulo do \emph{framework} mas pela autonomia e praticidade que ele proporciona aos usuários do Selenium Webdriver foi feita a
-        separação dele do Pybot. Seu uso é feito na classe Manager(\ref{sec:manager}) automaticamente quando nenhuma \emph{driver} é encontrado no computador do usuário.
+        Driloader é o responsável pelo download dos \textit{drivers} de cada navegador, suportando \textit{download} dos \textit{drivers} do \textit{Internet Explorer},
+        \textit{Firefox} e \textit{Chrome}, sendo possível para o usuário selecionar uma versão específica, a ultima versão ou detectar automaticamente qual a versão adequada para o navegador
+        instalado do usuário. Como para utilização do \textit{Selenium Webdriver} é necessário um \textit{driver} específico de cada navegador foi tomada a decisão da criação
+        desse projeto que inicialmente era um módulo do \textit{framework} mas pela autonomia e praticidade que ele proporciona aos usuários do Selenium Webdriver foi feita a
+        separação dele do \textit{Pybot}. Seu uso é feito na classe Manager(\autoref{sec:manager}) automaticamente quando nenhuma \textit{driver} é encontrado no computador do usuário.
 
 
 
