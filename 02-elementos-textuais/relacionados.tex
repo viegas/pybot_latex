@@ -4,74 +4,79 @@
 
 \chapter{TRABALHOS RELACIONADOS}\label{chap:relacionados}
 
-    Conforme Max dos Santos \cite{dos2016estudo} a importância da criação de processos automatizados cresce junto da importância que os \textit{softwares} vão tendo na sociedade, e as empresas
-    tem uma certa dificuldade quando tentam de adotar ou implantar tais tipos de processos, devido a falta de profissionais com esse conhecimento ou pelas técnicas presentes hoje.
+    Conforme Max dos Santos \cite{dos2016estudo} a importância da criação de processos automatizados cresce junto da importância que os \textit{softwares}
+    vão tendo na sociedade, e as empresas tem uma certa dificuldade quando tentam de adotar ou implantar tais tipos de processos, devido à falta de
+    profissionais com esse conhecimento ou pelas técnicas presentes hoje.
 
-    A solução para automação de testes e processos em navegadores com maior adoção pela comunidade de desenvolvimento de software é o \textit{Selenium} \cite{selenium}.
-    O \textit{Selenium} trata-se de uma ferramenta composto por diversos projetos tais como \textit{Selenium Grid}, \textit{Selenium IDE}, \textit{Selenium Remote Control} e o \textit{Selenium WebDriver},
-    cada um com suas determinadas funcionalidades. Dentre os projetos citados, o \textit{Selenium WebDriver} é o que mais se assemelha ao projeto proposto pois trata-se de um \textit{framework} para
-    integração com navegador, este por sua vez é utilizado como uma das dependências do Pybot(\autoref{webdriver}).
+    A solução para automação de testes e processos em navegadores com maior adoção pela comunidade de desenvolvimento de software é o \textit{Selenium}
+    \cite{selenium}. O \textit{Selenium} trata-se de uma ferramenta composto por diversos projetos tais como \textit{Selenium Grid}, \textit{Selenium IDE},
+    \textit{Selenium Remote Control} e o \textit{Selenium WebDriver}, cada um com suas determinadas funcionalidades. Dentre os projetos citados, o
+    \textit{Selenium WebDriver} é o que mais se assemelha ao projeto proposto pois trata-se de um \textit{framework} para integração com navegador,
+    este por sua vez é utilizado como uma das dependências do Pybot (\autoref{webdriver}).
 
-    Ainda, outra ferramenta também relacionada ao projeto proposto é o \textit{Robotframework}, esta por sua vez é uma solução bem mais sofisticada, contendo uma quantidade abrangente de módulos
-    e usos, porém junto traz uma complexidade maior para seu uso.
+    Ainda, outra ferramenta também relacionada ao projeto proposto é o \textit{Robotframework}, que se trata de uma solução bem mais sofisticada,
+    contendo uma quantidade abrangente de módulos e usos, porém junto traz uma complexidade maior para seu uso.
 
-    Similar a estes sistemas, a solução proposta neste Trabalho de Conclusão de Curso busca seguir direcionando a integração do \textit{Selenium} com o \textit{Python}. Porém, pretende-se com o Pybot o
-    desenvolvimento ferramenta simples e de fácil uso, portanto.
+    Similar a estes sistemas, a solução proposta neste Trabalho de Conclusão de Curso busca seguir direcionando a integração do \textit{Selenium} com
+    o \textit{Python}. Porém, pretende-se com o Pybot o desenvolvimento ferramenta simples e de fácil uso, portanto.
 
-    Para entender melhor o problema, apresenta-se uma análise das funcionalidades e usos das ferramentas citadas anteriormente junto de um comparativo de alguns pontos fortes e
-    fracos de cada uma delas.
+    Para entender melhor o problema, apresenta-se uma análise das funcionalidades e usos das ferramentas citadas anteriormente junto de um comparativo
+    de alguns pontos fortes e fracos de cada uma delas.
 
     \section{Selenium Webdriver}
+    \label{sec:selenium}
+        O \textit{Selenium Webdriver} \cite{webdriver} é de um \textit{framework} onde disponibiliza-se para usuário uma \textit{API}, Interface de
+        Programação de Aplicação (do Inglês Application Programming Interface - API), para integração com o navegador escolhido. Com essa \textit{API}
+        é possível enviar diversos tipos de comandos para o navegador, tais como, verificação e iteração qualquer tipo de elemento presente no DOM
+        (Modelo de Documento Objeto, do inglês \textit{Document Object Model}), geração de \textit{prints} de tela e manipulação do próprio navegador,
+        como por exemplo maximizar a janela, redimensionar ou abrir uma nova janela. Todos os comandos executados no navegador são comandos nativos de
+        cada sistema operacional, sendo necessário possuir o \textit{driver} especifico para cada navegador e sistema operacional para que funcione.
 
-        O \textit{Selenium Webdriver} \cite{webdriver} é de um \textit{framework} onde disponibiliza-se para usuário uma API para integração com o navegador escolhido. Com essa API é possível enviar
-        diversos tipos de comandos para o navegador, tais como, verificação e iteração qualquer tipo de elemento presente no DOM (Modelo de Documento Objeto, do inglês \textit{Document Object Model}),
-        geração de \textit{prints} de tela e manipulação do próprio navegador, como por exemplo maximizar a janela, redimensionar ou abrir uma nova janela. Todos os comando executados no navegador
-        são comandos nativos de cada sistema operacional, sendo necessário possuir o \textit{driver} especifico para cada navegador e sistema operacional para que funcione.
-
-        Ainda, possui suporte as seguintes linguagens de programação: \textit{Java}, \textit{Csharp}, \textit{Python}, \textit{Ruby}, \textit{Php}, \textit{Perl} e \textit{Javascript}. Na maioria
-        dos casos, o suporte e funcionalidade são os mesmos para todas linguagens, porém o maior suporte é dado para a linguagem \textit{Java}.
+        Ainda, possui suporte as seguintes linguagens de programação: \textit{Java}, \textit{Csharp}, \textit{Python}, \textit{Ruby}, \textit{Php},
+        \textit{Perl} e \textit{Javascript}. Na maioria dos casos, o suporte e funcionalidade são os mesmos para todas linguagens, porém o maior suporte
+        é dado para a linguagem \textit{Java}.
 
 
     \section{Robotframework}
 
-        O Robotframework \cite{robotframework} é um dos \textit{frameworks} mais abrangentes disponíveis para teste de software para linguagem \textit{Python}. Esta solução consiste
-        de uma vasta variedade de módulos distintos, contando com 11 módulos próprio do \textit{framework} e mais 30 de projetos parceiros, possíveis de serem habilitados. Desta forma,
-        possível de optar por incluir determinado módulo ou não no projeto, tendo, também, suporte a \textit{Java} na maioria de seus módulos.
+        O \textit{Robotframework} \cite{robotframework} é um dos \textit{frameworks} mais abrangentes disponíveis para teste de software para linguagem
+        \textit{Python}. Esta solução consiste de uma vasta variedade de módulos distintos, contando com 11 módulos próprio do \textit{framework} e
+        mais 30 de projetos parceiros, possíveis de serem habilitados. Desta forma, possível de optar por incluir determinado módulo ou não no projeto,
+        tendo, também, suporte a \textit{Java} na maioria de seus módulos.
 
-        Sua arquitetura foi feita para executar testes utilizando-se de ATDD (\textit{Acceptance Test Driven Development} ou Desenvolvimento Orientado a Testes de Aceitação) que trata-se de uma
-        abordagem ou prática para a criação de requisitos colaborativamente entre o cliente e a equipe e fazendo uso da técnica de desenvolvimento Ágil BDD
-        (\textit{Behavior Driven Development} ou Desenvolvimento Guiado por Comportamento em português) onde são criados cenários para cada tipo de comportamento da aplicação levando em
-        conta 3 estados, Dado que, Quando e Então, como no exemplo a seguir.
+        Sua arquitetura foi feita para executar testes utilizando-se de ATDD (\textit{Acceptance Test Driven Development} ou Desenvolvimento Orientado
+        a Testes de Aceitação) que trata-se de uma abordagem ou prática para a criação de requisitos colaborativamente entre o cliente e a equipe e
+        fazendo uso da técnica de desenvolvimento Ágil BDD (\textit{Behavior Driven Development} ou Desenvolvimento Guiado por Comportamento em
+        português) onde são criados cenários para cada tipo de comportamento da aplicação levando em conta 3 estados, \textbf{Dado que}, \textbf{Quando}
+        e \textbf{Então}, como no exemplo a seguir. Como por exemplo um caso de teste onde temos que verificar uma lista com objetos dentro não podem
+        estar vazias, a escrita desse teste ficaria da seguinte maneira: \textbf{Dado} que uma nova lista é criada; \textbf{quando} eu adiciono um objeto
+        a ela; \textbf{então} a lista não deve estar vazia. Dessa maneira para o \textit{Robotframework} cara um desses estados é um passo a ser executado,
+        e o mesmo foi codificado para se adequar a esse caso de teste O \textit{Robotframework} conta também com os seguintes recursos:
 
-        \vspace*{0,5cm}
-        Exemplo: Listas com objetos dentro não podem estar vazias
-        \begin{description}
-            \item[Dado] que uma nova lista é criada
-            \item[Quando] eu adiciono um objeto a ela
-            \item[Então] a lista não deve estar vazia.
-        \end{description}
-        \vspace*{0,5cm}
-
-        O \textit{Robotframework} conta também com os seguinte recursos:
         \begin{itemize}
-            \item geração de relatórios de execução, tanto de sucesso como em falhas;
-            \item interface por linha de comando;
-            \item resposta de execução por XML.
+            \item Geração de relatórios de execução, tanto de sucesso como em falhas;
+            \item Interface por linha de comando;
+            \item Resposta de execuções por XML.
         \end{itemize}
 
 
     \section{Comparativo}
 
-    Foram levantados alguns dos pontos mais relevantes para a execução dos \textit{scripts} de testes de cada um dos \textit{framework} e feito uma tabela comparativa entre eles.
-    Ambos \textit{frameworks} utilizam em sua base o próprio \textit{Selenium Webdriver}, portando todas as funcionalidades de integração com os navegadores estarão
-    presentes neles e não serão tratadas no comparativo feito a seguir na \autoref{tab:comp}.
+        Foram levantados alguns dos pontos mais relevantes para a execução dos \textit{scripts} de testes de cada um dos \textit{frameworks} e feito uma
+        tabela comparativa entre eles. Todos os \textit{frameworks} apresentados no comparativo a seguir na \autoref{tab:comp} utilizam em sua base o
+        próprio \textit{Selenium Webdriver}, portanto todas as funcionalidades padrões de integração com os navegadores descritas na \autoref{sec:selenium}
+        não serão tratadas nesse comparativo.
 
-    \input{./05-tabelas/comparativo}
-    \vspace*{1cm}
+        \input{./05-tabelas/comparativo}
+        \vspace*{1,7cm}
 
-    Como podemos ver, o diferencial é nas funcionalidades especificas de cada um, onde podemos perceber uma separação de níveis. Onde o \textit{Robotframework} uma ferramenta super
-    completa com módulos independentes e específicos para cada necessidade, dando assim uma versatilidade maior para usuário os outros 2 \textit{frameworks} são
-    mais básicos, onde o projeto proposto pretende trazer melhorias em relação ao \textit{Selenium} padrão, dando uma maior facilidade para os usuários no inicio das tarefas utilizando
-    algumas técnicas para agilizar e organizar o desenvolvimento dos \textit{scripts}, geração de relatórios de execução, contendo um arquivo de configurações para as execuções dos mesmos e controle
-    automático dos \textit{drivers} de cada navegador.
+        Como podemos ver na \autoref{tab:comp}, o diferencial é nas funcionalidades especificas de cada um dos \textit{frameworks}, onde podemos perceber
+        uma separação de níveis. Onde o \textit{Robotframework} uma ferramenta completa, contem módulos independentes e específicos para cada necessidade,
+        dando assim uma versatilidade maior para usuário e o \textit{Selenium Webdriver} sendo mais básico, onde não possui muito alem de prover a
+        integração com o navegador e suporte a diversas linguagens de programação.
 
+        O projeto proposto pretende trazer melhorias em relação ao \textit{Selenium Webdriver} padrão, mas não pretende ser uma ferramenta tão abrangente
+        quanto o \textit{Robotframework}, sendo um meio termo entre essas ferramentas. Para isso o projeto propõe dar uma maior facilidade para os usuários
+        no início das tarefas, gerenciando automaticamente os \textit{driver} dos navegadores, utilizando-se de algumas técnicas para agilizar e organizar
+        o desenvolvimento dos \textit{scripts} com o padrão \textit{Page Object} e a pesquisa dinâmica dos elementos nas páginas, geração de relatórios de
+        execução e contendo um arquivo de configurações centralizado para as execuções dos \textit{scripts}.

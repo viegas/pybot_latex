@@ -4,31 +4,34 @@
 
 \chapter{INTRODUÇÃO}\label{chap:introducao}
 
-O ciclo de vida de software tem diversas etapas, das quais podem ser elencadas: Análise de requisitos, Concepção do Projeto, Desenvolvimento,
-Implantação e por fim Manutenção. Usualmente, nas etapas de Desenvolvimento e Manutenção ocorre a maior parte da criação ou a codificação do
-\textit{software}, e na concepção de um projeto a necessidade da criação de um processo de testes que cresça junto do sistema não costuma ter
-a relevância necessária.
+    O ciclo de vida de software tem diversas etapas, das quais podem ser elencadas: Análise de requisitos, Concepção do Projeto, Desenvolvimento,
+    Implantação e por fim Manutenção. Usualmente, nas etapas de Desenvolvimento e Manutenção ocorre a maior parte da criação ou a codificação do
+    \textit{software}, e na concepção de um projeto a necessidade da criação de um processo de testes que cresça junto do sistema não costuma ter
+    a relevância necessária.
 
-Atualmente, existem diversas ferramentas que possibilitam a criação de testes automatizados como por exemplo o \textit{Selenium Webdriver} \cite{selenium}
-e o \textit{Robotframework} \cite{robotframework}, e esses testes automatizados podem ser desde os mais simples, como a verificação de campos dentro da página
-ou um determinado título, até testes mais complicados, como um teste de regressão, onde todas as funcionalidades e requisitos
-do software são testadas novamente para garantir que uma atualização do software não impacte em outras partes. Porém, para fazer uso dessas
-ferramentas existentes é necessário avaliar previamente diferentes questões, como compatibilidade com sistema operacional, linguagem suportada
-e ferramentas oferecidas, e a curva de aprendizagem para começar a utilizá-las pode ser demorada e custosa.
+    Atualmente, existem diversas ferramentas que possibilitam a criação de testes automatizados como por exemplo o \textit{Selenium Webdriver} \cite{selenium}
+    e o \textit{Robotframework} \cite{robotframework}, e esses testes automatizados podem ser desde os mais simples, como a verificação de campos dentro da página
+    ou um determinado título, até testes mais complicados, como um teste de regressão, onde todas as funcionalidades e requisitos
+    do software são testadas novamente para garantir que uma atualização do software não impacte em outras partes. Porém, para fazer uso dessas
+    ferramentas existentes é necessário avaliar previamente diferentes questões, como compatibilidade com sistema operacional, linguagem suportada,
+    funcionalidades oferecidas e padrões a serem utilizados, e a curva de aprendizagem para começar a utilizá-las pode ser demorada e custosa.
 
-Este trabalho de conclusão de curso tem como objetivo criar um \textit{framework} para auxiliar nas tarefas de criação de processos de testes automatização em sistemas e ou
-sites em navegadores, contando com uma forma de utilização fácil e trazendo para si algumas das
-preocupações básicas que os desenvolvedores enfrentam ao utilizar outras ferramentas de testes. Levando o nome de PyBot, união das palavras \textit{Python},
-linguagem utilizada para criação do projeto, e \textit{Bot}, que em inglês quer dizer robô, essa ferramenta propõe disponibilizar para os usuários uma série de
-ferramentas para auxiliar a criação e implantação desses processos, contando com uma estrutura de criação dos \textit{scripts} de testes. Para isso,
-a solução permitirá a criação de testes no padrão \textit{PageObject} e \textit{PageElement}, geração de registros de \textit{logs} para controle de tarefas e passos
-executados e o gerenciamento automático de \textit{drivers} de navegadores com a ferramenta \textit{Driloader}.
+    Este trabalho de conclusão de curso tem como objetivo criar um \textit{framework} para auxiliar nas tarefas codificação e criação de processos de testes automatização para
+    sistemas e ou sites em navegadores, contando com uma forma de utilização fácil e simples, e trazendo para si algumas das preocupações básicas que os desenvolvedores enfrentam
+    ao utilizar outros \textit{frameworks} de testes. Levando o nome de PyBot, união das palavras \textit{Python}, linguagem utilizada para criação do projeto, e \textit{Bot},
+    que em inglês quer dizer robô, essa ferramenta propõe disponibilizar para os usuários uma série de ferramentas para auxiliar a criação e implantação desses processos,
+    contando com uma estrutura de criação dos \textit{scripts} de testes. Para isso, esse \textit{framework} contará com uma instalação simples com o minimo de configurações e permitirá
+    a criação de testes no padrão \textit{PageObject} e \textit{PageElement}, geração de registros de \textit{logs} para controle de tarefas e passos executados e o
+    gerenciamento automático de \textit{drivers} de navegadores com a ferramenta \textit{Driloader}.
 
+    Com isso a codificação de \textit{scripts} de testes automatizados pode se tornar mais simples, pois parte das complexidades de se iniciar com esses testes automatizado será
+    feita inteiramente pelo \textit{framework}, encarregando o usuário em apenas na  codificação das páginas do seu site no modelo simples e intuitivo do \textit{Pybot} e na criação dos métodos que
+    serão encarregados de executar os determinados comandos daquela página.
 
-O restante deste documento é organizado da seguinte forma:
-No \autoref{chap:relacionados} serão apresentados os trabalhos relacionado, contando com 2 exemplos de ferramentas existentes e um comparativo dessas ferramentas e o \textit{framework} proposto;
-No \autoref{chap:imp} irá apresentar os módulos presentes no \textit{framework} proposto com seus determinados propósitos e funcionalidades;
-No \autoref{chap:tec} irá apresentar as tecnologias utilizadas para o desenvolvimento e controle do código fonte do \textit{framework};
-No \autoref{chap:proj} irá apresentar um proposta de utilização do \textit{framework}, fazendo uso de alguns conceitos apresentados;
-No \autoref{chap:result} irá apresentar uma análise de dados coletados a partir de um questionário com usuários sobre a utilização do \textit{framework};
-E por fim no \autoref{chap:conclusao} será apresentado a conclusão deste trabalho junto de possíveis trabalhos futuros.
+    O restante deste documento é organizado da seguinte forma:
+    No \autoref{chap:relacionados} serão apresentados os trabalhos relacionado, contando com 2 exemplos de ferramentas existentes e um comparativo dessas ferramentas e o \textit{framework} proposto;
+    No \autoref{chap:imp} irá apresentar os módulos presentes no \textit{framework} proposto com seus determinados propósitos e funcionalidades;
+    No \autoref{chap:tec} irá apresentar as tecnologias utilizadas para o desenvolvimento e controle do código fonte do \textit{framework};
+    No \autoref{chap:proj} irá apresentar um proposta de utilização do \textit{framework}, fazendo uso de alguns conceitos apresentados;
+    No \autoref{chap:result} irá apresentar uma análise de dados coletados a partir de um questionário com usuários sobre a utilização do \textit{framework};
+    E por fim no \autoref{chap:conclusao} será apresentado a conclusão deste trabalho junto de possíveis trabalhos futuros.

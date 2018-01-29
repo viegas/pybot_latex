@@ -2,8 +2,11 @@
 % Documento: FRAMEWORK PROPOSTO
 %
 \chapter{ARQUITETURA DO PYBOT}\label{chap:imp}
-    O \textit{framework} proposto é formado por 4 módulos básicos, cada um com suas devidas utilidades e funções.
-    A separação de cada módulos foi dada com base em suas características e funcionalidades.
+    O \textit{framework} proposto foi formado por 4 módulos básicos, cada um com suas devidas utilidades e funções.
+    A separação de cada módulo foi criada com base em suas características e funcionalidades, onde temos um modulo responsável pela gerenciamento e
+    funcionamento do \textit{framework}, outro pela abstração das páginas dos sistemas \textit{web} a serem mapeados, controle e criação de relatórios
+    e logs de execuções e por fim um responsável pelo download e gerenciamento dos \textit{drivers} de cada navegador utilizados pelos \textit{scripts}
+    escritos pelos usuários.
 
     Na Figura \ref{fig:modules} é apresentado um diagrama dos módulos junto das suas classes principais que compõe o
     \textit{framework} e nas próximas seções serão descritas as suas funcionalidades e usos.
@@ -18,15 +21,16 @@
     \end{figure}
 
     \section{Core}
-        Este módulo contém as funcionalidades básicas para a operação do \textit{framework} com o Selenium \textit{Webdriver}
-        e o gerenciamento dos parâmetros de execuções de cada \textit{script}.
+        Este é o módulo principal do framework, nele contém as funcionalidades básicas para a operação do \textit{framework} com o Selenium \textit{Webdriver},
+        execução e o gerenciamento dos parâmetros de execuções de cada \textit{script}.
 
         \subsection{Manager} \label{sec:manager}
-        A classe \textit{Manager} serve para abstrair o uso do Selenium \textit{Webdriver} criando uma camada de métodos próprios fazendo com que os \textit{scripts}
-        criados não sejam impactados por possíveis atualização na API do \textit{Selenium}. Fazendo uso do Driloader mencionado na
-        subseção \ref{driloader} ele verifica a necessidade do download do \textit{driver} para poder executar o \textit{Selenium Webdriver}.
+        A classe \textit{Manager} é a classe principal do framework, ela serve para abstrair o uso do Selenium \textit{Webdriver} criando uma camada
+        de métodos próprios fazendo com que os \textit{scripts} criados com o \textit{Pybot} não sejam impactados por possíveis atualização na API do \textit{Selenium}.
+        Dentro dele é feito o uso do \textit{Driloader}, descrito na subseção \ref{driloader} mais a frente, que verifica a necessidade do download do \textit{driver}
+        para poder executar o \textit{Selenium Webdriver} e assim abrir o navegador escolhido pelo usuário.
 
-        Como exemplo na Figura~\ref{fig:manager} temos o exemplo de alguns dos comando disponíveis do Manager, sendo o da linha 4 para o início do processo
+        Como exemplo na Figura~\ref{fig:manager} temos o exemplo de alguns dos comandos disponíveis do Manager, sendo o da linha 4 para o início do processo
         e execução do \textit{driver} do navegador, na linha 7 para navegar para uma URL e na linha 12 para finalizar o processo.
 
         \begin{figure}[H]
@@ -39,11 +43,11 @@
 
 
         \subsection{Configuration}
-        Responsável por gerar as configurações básicas para o \textit{framework} e disponibilizá-las no arquivo \textit{pybot.ini}.
-        Este arquivo é criado automaticamente para cada script do usuário e nele é possível adicionar qualquer tipo de configurações ou parâmetros
-        necessários para a execução do \textit{script}.
+        Responsável por gerar e gerenciar as configurações básicas para o \textit{framework} e disponibilizá-las no arquivo \textit{pybot.ini} diponivel na mesma pasta que
+        o \textit{script}, caso não exista este arquivo é criado automaticamente para cada script. Nele é possível adicionar qualquer configuração ou parâmetros customizado
+        do usuário para qualquer necessidade da execução do \textit{script}.
 
-        Como exemplo, pode ser observado na linha 8 da código apresentado na Figura~\ref{fig:config} o comando base para buscar uma determinada configuração do arquivo.
+        Na Figura~\ref{fig:config} temos como exemplo apresentado na linha 8 é o código utilizado para buscar uma determinada configuração dentro arquivo \textit{pybot.ini}, sendo ela customizada pelo usuário ou não.
 
         \begin{figure}[H]
             \vspace*{0,3cm}
@@ -52,7 +56,6 @@
             \includegraphics[width=0.8\textwidth]{./04-figuras/config}
             \label{fig:config}
         \end{figure}
-
 
         O padrão de escrita das configurações pode ser visto na \autoref{fig:pybot.ini}, onde é necessário ter uma Seção e as variáveis desejadas.
         E para a utilização delas segue o mesmo padrão: \\ \mbox{\textit{configuration.getConfig('Seção', 'variável')}}.
@@ -64,6 +67,10 @@
             \includegraphics[width=0.7\textwidth]{./04-figuras/ini}
             \label{fig:pybot.ini}
         \end{figure}
+
+        Para o funcionamento correto dos \textit{scripts} o \textit{Pybot} necessita de duas configurações básicas dentro desse arquivo, que são o navegador utilizado na execução e
+        o endereço no computador do \textit{driver} desse navegador. Ambas configurações caso não existam são criadas automaticamente.
+
 
 
     \section{Component} \label{sec:comp}
@@ -80,13 +87,16 @@
             \label{fig:eleme}
         \end{figure}
 
+        \subsection{PageObject}
+            Classe de abstração das páginas web. Serve para poder juntar diversos \textit{PageElement} descritos pelo usuário em uma classe para melhor legibilidade e componentização das
+            páginas mapeadas e disponibilizar para os \textit{PageElement} acesso ao navegador.
 
         \subsection{WebElement}
             Serve para abstrair o uso da classe \textit{WebElement} do próprio \textit{Selenium Webdriver}. Contendo uma classe para cada tipo de campo dos \textit{html},
-            ele dispõe de algumas funcionalidades básica, como a atribuição de uma valor para um elemento do tipo \textit{input text} irá escrever
+            ele dispõe de algumas funcionalidades básica, como a atribuição de um valor para um elemento do tipo \textit{input text} irá escrever
             valor dentro do campo, \textit{select} irá selecionar a opção cujo texto seja igual ao valor informado, \textit{radio} irá selecionar o
             a opção que tenha o \textit{value} do valor informado e para o tipo \textit{checkbox} irá marcar ou desmarcar as opções se o valor for
-            verdadeiro(\textit{True}) ou falso(\textit{False})
+            verdadeiro (\textit{True}) ou falso (\textit{False})
 
         \subsection{PageElement e PageElements}
         \label{PageElement}
@@ -97,7 +107,6 @@
             dentro de cada parênteses das definições dos \textit{PageElement}.
             Usa-se a classe PageElements quando quiser pegar mais de um elemento com o mesmo seletor.
 
-
             \begin{figure}[H]
                 \vspace*{0,3cm}
                 \centering
@@ -107,23 +116,22 @@
             \end{figure}
 
 
-        \subsection{PageObject}
-            Classe simbólica, serve apenas para poder juntar diversos PageElement descritos pelo usuário em uma classe para melhor
-            legibilidade e componentização das páginas mapeadas.
-
-
 
     \section{Report}
 
-        Estes módulo é destinado para geração de logs de execuções internas do \textit{framework}, criação e controle
-        de logs definidos pelos usuário e a criação de planilhas analíticas de dados extraídos das páginas.
+        Este módulo é destinado para geração de \textit{logs} das execuções internas do \textit{framework}, a criação e controle
+        de \textit{logs} de execuções de texto e no terminal definidos pelos usuário e a criação de planilhas analíticas de dados extraídos das páginas.
 
         \subsection{Logger}
-        Classe de geração dos Logs de execução do \textit{framework}, onde cada execução, ação, sucessos e falhas podem ser configurados para que no decorrer do processo
-        sejam mostrados no terminal de execução e no final salvos em um arquivo de texto.
+        Classe de geração dos \textit{Logs} de execução do \textit{framework}, onde cada execução, ação, sucessos e falhas podem ser configurados para que no
+        decorrer do processo sejam mostrados no terminal de execução e no final salvos em um arquivo de texto.
+
+        Os \textit{logs} podem ser configurados com níveis que podem ser \textit{CRITICAL}, \textit{ERROR}, \textit{WARNING}, \textit{INFO} e \textit{DEBUG}, e no arquivo de configurações
+        é possível definir qual o nível desejado para que os \textit{logs} apareçam. Numa escala de 1 a 5, \textit{CRITICAL} tem valor 5 e \textit{DEBUG} valor 1, dessa maneira se o nível
+        do \textit{log} for definido como \textit{DEBUG} apenas ele aparecerá e se for definido como \textit{CRITICAL} todos apareceram.
 
         Na \autoref{fig:logs} podemos verificar 2 tipos de escritas do \textit{log}, onde na linha 11 temos a escrita de um \textit{log} e na linha 21 é o tratamento
-        de erros de execução, onde este para a execução do codigo ao ser chamado.
+        de erros de execução, onde este para a execução do código ao ser chamado.
 
         \begin{figure}[H]
             \vspace*{0,3cm}
@@ -135,7 +143,7 @@
 
 
         \subsection{CsvHandler}
-        Utilizado para geração de planilhas com dados extraídos das páginas para análise posterior dos usuários. Os dados tem que ser extraídos manualmente pelo
+        Utilizado para geração de planilhas com dados extraídos das páginas para análise posterior dos usuários. Os dados têm que ser extraídos manualmente pelo
         usuário, e uma vez extraídos são salvos automaticamente em um arquivo com a extensão \textit{csv}.
 
         Como exemplo, podemos observar na \autoref{fig:csv} um exemplo de utilização do \textit{CsvHandler}, onde, na linha 5 será criado uma planilha contendo uma
@@ -153,10 +161,10 @@
     \section{Driloader}
     \label{driloader}
         Driloader é o responsável pelo download dos \textit{drivers} de cada navegador, suportando \textit{download} dos \textit{drivers} do \textit{Internet Explorer},
-        \textit{Firefox} e \textit{Chrome}, sendo possível para o usuário selecionar uma versão específica, a ultima versão ou detectar automaticamente qual a versão adequada para o navegador
+        \textit{Firefox} e \textit{Chrome}, sendo possível para o usuário selecionar uma versão específica, a última versão ou detectar automaticamente qual a versão adequada para o navegador
         instalado do usuário. Como para utilização do \textit{Selenium Webdriver} é necessário um \textit{driver} específico de cada navegador foi tomada a decisão da criação
-        desse projeto que inicialmente era um módulo do \textit{framework} mas pela autonomia e praticidade que ele proporciona aos usuários do Selenium Webdriver foi feita a
-        separação dele do \textit{Pybot}. Seu uso é feito na classe Manager(\autoref{sec:manager}) automaticamente quando nenhuma \textit{driver} é encontrado no computador do usuário.
+        desse projeto que inicialmente era um módulo do \textit{framework}, mas pela autonomia e praticidade que ele proporciona aos usuários do Selenium Webdriver foi feita a
+        separação dele do \textit{Pybot}. Seu uso é feito na classe Manager (\autoref{sec:manager}) automaticamente quando nenhuma \textit{driver} é encontrado no computador do usuário.
 
 
 
